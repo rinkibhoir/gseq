@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Staining Techniques Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Staining Techniques Quiz</h1>
+    <form id="quizForm">
+
+      <!-- Questions -->
+      <div class="question">
+        <p>1. What is the main purpose of staining in microbiology?</p>
+        <label><input type="radio" name="q1" value="a"> To kill bacteria</label><br>
+        <label><input type="radio" name="q1" value="b"> To visualize and differentiate microbial structures</label><br>
+        <label><input type="radio" name="q1" value="c"> To feed microbes</label>
+        <div class="result" id="result1"></div>
+      </div>
+
+      <div class="question">
+        <p>2. Which stain is used as the primary stain in Gram staining?</p>
+        <label><input type="radio" name="q2" value="a"> Safranin</label><br>
+        <label><input type="radio" name="q2" value="b"> Crystal violet</label><br>
+        <label><input type="radio" name="q2" value="c"> Methylene blue</label>
+        <div class="result" id="result2"></div>
+      </div>
+
+      <div class="question">
+        <p>3. What is the role of iodine in Gram staining?</p>
+        <label><input type="radio" name="q3" value="a"> Counterstain</label><br>
+        <label><input type="radio" name="q3" value="b"> Decolorizer</label><br>
+        <label><input type="radio" name="q3" value="c"> Mordant</label>
+        <div class="result" id="result3"></div>
+      </div>
+
+      <div class="question">
+        <p>4. Which organism is detected using acid-fast staining?</p>
+        <label><input type="radio" name="q4" value="a"> Staphylococcus</label><br>
+        <label><input type="radio" name="q4" value="b"> Mycobacterium</label><br>
+        <label><input type="radio" name="q4" value="c"> E. coli</label>
+        <div class="result" id="result4"></div>
+      </div>
+
+      <div class="question">
+        <p>5. What dye is used to stain endospores?</p>
+        <label><input type="radio" name="q5" value="a"> Malachite green</label><br>
+        <label><input type="radio" name="q5" value="b"> Safranin</label><br>
+        <label><input type="radio" name="q5" value="c"> Crystal violet</label>
+        <div class="result" id="result5"></div>
+      </div>
+
+      <div class="question">
+        <p>6. Which stain is used to visualize bacterial capsules?</p>
+        <label><input type="radio" name="q6" value="a"> Congo red</label><br>
+        <label><input type="radio" name="q6" value="b"> Safranin</label><br>
+        <label><input type="radio" name="q6" value="c"> Iodine</label>
+        <div class="result" id="result6"></div>
+      </div>
+
+      <div class="question">
+        <p>7. How does Gram-positive bacteria appear after Gram staining?</p>
+        <label><input type="radio" name="q7" value="a"> Red</label><br>
+        <label><input type="radio" name="q7" value="b"> Blue</label><br>
+        <label><input type="radio" name="q7" value="c"> Purple</label>
+        <div class="result" id="result7"></div>
+      </div>
+
+      <div class="question">
+        <p>8. What is the decolorizing agent in Gram staining?</p>
+        <label><input type="radio" name="q8" value="a"> Alcohol or acetone</label><br>
+        <label><input type="radio" name="q8" value="b"> Iodine</label><br>
+        <label><input type="radio" name="q8" value="c"> Water</label>
+        <div class="result" id="result8"></div>
+      </div>
+
+      <div class="question">
+        <p>9. Which of the following is a simple stain?</p>
+        <label><input type="radio" name="q9" value="a"> Methylene blue</label><br>
+        <label><input type="radio" name="q9" value="b"> Gram stain</label><br>
+        <label><input type="radio" name="q9" value="c"> Acid-fast stain</label>
+        <div class="result" id="result9"></div>
+      </div>
+
+      <div class="question">
+        <p>10. Which staining technique can help visualize bacterial flagella?</p>
+        <label><input type="radio" name="q10" value="a"> Capsule stain</label><br>
+        <label><input type="radio" name="q10" value="b"> Flagella stain</label><br>
+        <label><input type="radio" name="q10" value="c"> Endospore stain</label>
+        <div class="result" id="result10"></div>
+      </div>
+
+      <button type="button" onclick="checkAnswers()">Submit</button>
+      <div id="finalScore" class="score-display"></div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
